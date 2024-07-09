@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+viZC6Mqd6g=",
+  "dgSpecHash": "emKy/HU8ung=",
   "success": true,
   "projectFilePath": "C:\\workspace\\Journey\\src\\Journey.Application\\Journey.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Modal_GR\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\Modal_GR\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.7\\microsoft.data.sqlite.core.8.0.7.nupkg.sha512",
     "C:\\Users\\Modal_GR\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.7\\microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
     "C:\\Users\\Modal_GR\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.7\\microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",

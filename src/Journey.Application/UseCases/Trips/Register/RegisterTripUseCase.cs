@@ -35,16 +35,11 @@ namespace Journey.Application.UseCases.Trips.Register
         }
 
         private void Validate(RequestRegisterTripJson request){
-            if(string.IsNullOrWhiteSpace(request.Name)){
-                throw new JourneyException("Nome não pode ser vazio!");
-            }
-
-            if(request.StartDate.Date < DateTime.UtcNow.Date){
-                throw new JourneyException("A viagem não pode ser passada para uma data passada!");
-            }
-
-            if(request.EndDate.Date < request.StartDate.Date){
-                throw new JourneyException("A viagem deve terminar após a data de início!");
+            var validator = new RegisterTripValidator();
+            var result = validator.Validate(request);
+            if(result.IsValid == false){
+                var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
+                throw new ErrorOnValidationException(errorMessages);
             }
         }
     }

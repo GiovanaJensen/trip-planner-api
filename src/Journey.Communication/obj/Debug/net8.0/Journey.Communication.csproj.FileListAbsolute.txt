@@ -9,3 +9,4 @@ C:\workspace\Journey\src\Journey.Communication\obj\Debug\net8.0\Journey.Communic
 C:\workspace\Journey\src\Journey.Communication\obj\Debug\net8.0\refint\Journey.Communication.dll
 C:\workspace\Journey\src\Journey.Communication\obj\Debug\net8.0\Journey.Communication.pdb
 C:\workspace\Journey\src\Journey.Communication\obj\Debug\net8.0\ref\Journey.Communication.dll
+C:\workspace\Journey\src\Journey.Communication\obj\Debug\net8.0\Journey.Communication.sourcelink.json
