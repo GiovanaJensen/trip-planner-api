@@ -10,6 +10,7 @@ using Journey.Application.UseCases.Trips.GetAll;
 using Journey.Application.UseCases.Trips.GetById;
 using Journey.Application.UseCases.Trips.Delete;
 using Journey.Exception.ExceptionsBase;
+using Journey.Application.UseCases.Activities.Register;
 
 namespace Journey.Api.Controllers
 {
@@ -19,7 +20,7 @@ namespace Journey.Api.Controllers
     {
         [HttpPost]
         [ProducesResponseType(typeof(ResponseShortTripJson), StatusCodes.Status201Created)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
         public IActionResult Register([FromBody] RequestRegisterTripJson request)
         {
             var useCase = new RegisterTripUseCase();
@@ -38,7 +39,7 @@ namespace Journey.Api.Controllers
         [HttpGet]
         [Route("{id}")]
         [ProducesResponseType(typeof(ResponseTripJson), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
         public IActionResult GetById([FromRoute] Guid id){
            var useCase = new GetByIdUseCase();
            var response = useCase.Execute(id);
@@ -48,11 +49,22 @@ namespace Journey.Api.Controllers
         [HttpDelete]
         [Route("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent )]
-        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
         public IActionResult deleteById([FromRoute] Guid id){
            var useCase = new DeleteTripByIdUseCase();
            useCase.Execute(id);
            return NoContent();
+        }
+
+        [HttpPost]
+        [Route("{tripId}/activity")]
+        [ProducesResponseType(typeof(ResponseActivityJson), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
+        public IActionResult RegisterActivity([FromRoute] Guid tripId, [FromBody] RequestRegisterActivityJson request){
+            var useCase = new RegisterActivityForTripUseCase();
+            var response = useCase.Execute(tripId, request);
+            return Created(string.Empty, response);
         }
     }
 }

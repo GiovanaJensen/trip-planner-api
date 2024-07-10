@@ -590,7 +590,8 @@
           "FluentValidation": "11.9.2",
           "Journey.Communication": "1.0.0",
           "Journey.Exception": "1.0.0",
-          "Journey.Infrastructure": "1.0.0"
+          "Journey.Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.7"
         },
         "compile": {
           "bin/placeholder/Journey.Application.dll": {}

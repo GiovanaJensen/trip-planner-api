@@ -1272,7 +1272,8 @@
       "FluentValidation >= 11.9.2",
       "Journey.Communication >= 1.0.0",
       "Journey.Exception >= 1.0.0",
-      "Journey.Infrastructure >= 1.0.0"
+      "Journey.Infrastructure >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 8.0.7"
     ]
   },
   "packageFolders": {
@@ -1330,6 +1331,10 @@
           "FluentValidation": {
             "target": "Package",
             "version": "[11.9.2, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.7, )"
           }
         },
         "imports": [

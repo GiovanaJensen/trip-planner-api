@@ -19,7 +19,7 @@ namespace Journey.Api.Filters
 
                 context.HttpContext.Response.StatusCode = (int)journeyException.GetStatusCode();
                 var responseJson = new ResponseErrorsJson(journeyException.GetErrorMessages());
-                context.Result = new ObjectResult(responseJson);
+                context.Result = new ObjectResult(responseJson); 
             }else{
                 context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
                 var responseJson = new ResponseErrorsJson(new List<string> {"Erro Desconhecido"});
