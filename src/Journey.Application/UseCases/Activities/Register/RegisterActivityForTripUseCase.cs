@@ -22,11 +22,12 @@ namespace Journey.Application.UseCases.Activities.Register
 
             var entity = new Activity{
                 Name = request.Name,
-                Date = request.Date
+                Date = request.Date,
+                TripId = tripId,
             };
 
-            trip.Activities.Add(entity);
-            dbContext.Trips.Update(trip);
+            trip!.Activities.Add(entity);
+            dbContext.Activities.Add(entity);
             dbContext.SaveChanges();
 
             return new ResponseActivityJson{

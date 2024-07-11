@@ -1301,11 +1301,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj": {
-              "projectPath": "C:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj"
+            "c:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj": {
+              "projectPath": "c:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj"
             },
-            "C:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj": {
-              "projectPath": "C:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj"
+            "c:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj": {
+              "projectPath": "c:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj"
             },
             "C:\\workspace\\Journey\\src\\Journey.Infrastructure\\Journey.Infrastructure.csproj": {
               "projectPath": "C:\\workspace\\Journey\\src\\Journey.Infrastructure\\Journey.Infrastructure.csproj"

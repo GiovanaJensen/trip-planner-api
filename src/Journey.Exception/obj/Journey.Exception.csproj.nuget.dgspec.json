@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj": {}
+    "c:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj": {
+    "c:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj",
+        "projectUniqueName": "c:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj",
         "projectName": "Journey.Exception",
-        "projectPath": "C:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj",
+        "projectPath": "c:\\workspace\\Journey\\src\\Journey.Exception\\Journey.Exception.csproj",
         "packagesPath": "C:\\Users\\Modal_GR\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Journey\\src\\Journey.Exception\\obj\\",
+        "outputPath": "c:\\workspace\\Journey\\src\\Journey.Exception\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Modal_GR\\AppData\\Roaming\\NuGet\\NuGet.Config"

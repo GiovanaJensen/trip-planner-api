@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj": {}
+    "c:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj": {
+    "c:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj",
+        "projectUniqueName": "c:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj",
         "projectName": "Journey.Communication",
-        "projectPath": "C:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj",
+        "projectPath": "c:\\workspace\\Journey\\src\\Journey.Communication\\Journey.Communication.csproj",
         "packagesPath": "C:\\Users\\Modal_GR\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Journey\\src\\Journey.Communication\\obj\\",
+        "outputPath": "c:\\workspace\\Journey\\src\\Journey.Communication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Modal_GR\\AppData\\Roaming\\NuGet\\NuGet.Config"
